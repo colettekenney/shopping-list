@@ -72,13 +72,20 @@ header p {
 
 /** LIST SECTION **/
 .list {
-  background-color: #555555;
+  background-color: white;
+  border-radius: 10px;
+  padding: .5em;
+  margin-bottom: .6em;
   font-weight: 300;
   font-family: 'Muli', sans-serif;
+  height: 20em;
 }
 
 /** FOOTER SECTION **/
 
+footer {
+  margin-bottom: 5.7em;
+}
 .icons {
   background-color: #69d2e7;
   border-radius: 10px;
@@ -131,7 +138,7 @@ header p {
 
 }
 .icons ul li a:hover {
-  background: #dbe3cc;
+  background: #A7DBD7;
   color: #f4f4f4;
 }
 
