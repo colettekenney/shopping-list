@@ -29,9 +29,12 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-.content, .projects {
+.list-app {
   margin: 0 auto;
   max-width: 40%;
+  padding: 2em;
+  border: 2px solid #585858;
+  border-radius: 10px;
 }
 
 ::selection {
@@ -39,19 +42,17 @@ body {
     color: #fbfbfb
 }
 
-
-
 /** HEADER SECTION **/
-.content {
+header {
   color: #585858;
   text-align: center;
 }
 
-.content img {
+header img {
   /**border: 1px solid gray;**/
   margin: -2em;
 }
-.content h1 {
+header h1 {
   padding: -2rem 0;
   font-size: 2em;
   font-weight: 700;
@@ -59,27 +60,27 @@ body {
   text-transform: uppercase;
 }
 
-.content h1 > span {
-  color: #39dabd;
+header h1 > span {
+  color: #69d2e7;
 }
 
-.content p {
+header p {
   font-size: 1em;
   font-weight: 300;
   font-family: 'Muli', sans-serif;
 }
 
+/** LIST SECTION **/
+.list {
+  background-color: #555555;
+  font-weight: 300;
+  font-family: 'Muli', sans-serif;
+}
 
 /** FOOTER SECTION **/
 
-footer .social {
-  width: 100%;
-  margin: auto;
-  padding: .5rem 0;
-}
-
 .icons {
-  background-color: #39dabd;
+  background-color: #69d2e7;
   border-radius: 10px;
   float: left;
   width: 100%;
@@ -130,7 +131,7 @@ footer .social {
 
 }
 .icons ul li a:hover {
-  background: #a2ecdf;
+  background: #dbe3cc;
   color: #f4f4f4;
 }
 
@@ -138,22 +139,6 @@ footer .social {
 
  /** RESPONSIVE DESIGN **/
 @media screen and (max-width: 790px) {
-  nav > .content {
-  height: 3.375rem;
-}
-  nav .logo {
-    display: none;
-  }
-  nav .logo, nav .nav-menu {
-    font-size: 0.9rem
-  }
-  nav .nav-menu li a {
-  margin-left: -1rem;
-  }
-
-  header, header > .content {
-  height: 30rem;
-  }  
 
   header .content h6 {
   padding-top: 27rem;
