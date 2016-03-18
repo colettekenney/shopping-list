@@ -9,9 +9,9 @@ h3, h4, h5, h6, p, ol, ul, li {
   box-sizing: border-box;
 }
 
-div {
+/**div {
   border: 1px solid #ddd;
-}
+}**/
 
 *, *:before, *:after {
   box-sizing: inherit;
@@ -90,7 +90,6 @@ header p {
   width: 80%;
   margin: 1em 10% 1em;
   border-radius: 20px;
-  font-family: 'Open Sans', sans-serif;
   font-size: 1.1em;
   background-color: #e5e5e5;
   color: white;
@@ -98,6 +97,15 @@ header p {
   padding: 0.5em 1em;
 }
 
+#startover {
+  width: 20%;
+  margin: 0 40% 1em;
+  border-radius: 25px;
+  /**font-family: 'Open Sans', sans-serif;**/
+  font-size: 1.1em;
+  background-color: #ddd;
+  border: 0.1px solid #585858;
+}
 .list-items {
   line-height: 1.6em;
   
