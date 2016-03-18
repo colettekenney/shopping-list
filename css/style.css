@@ -1,0 +1,274 @@
+html, body, header, section, 
+aside, footer, div, span, h1, h2, 
+h3, h4, h5, h6, p, ol, ul, li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+div {
+  border: 1px solid #ddd;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+ol, ul {
+  list-style-type: none;
+  padding: 0;
+}
+/** START OF CUSTOM STYLES **/
+
+body {
+  background-color: #f4f4f4;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.content, .projects {
+  margin: 0 auto;
+  max-width: 40%;
+}
+
+::selection {
+    background: #171818;
+    color: #fbfbfb
+}
+
+
+
+/** HEADER SECTION **/
+.content {
+  color: #585858;
+  text-align: center;
+}
+
+.content img {
+  /**border: 1px solid gray;**/
+  margin: -2em;
+}
+.content h1 {
+  padding: -2rem 0;
+  font-size: 2em;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
+.content h1 > span {
+  color: #39dabd;
+}
+
+.content p {
+  font-size: 1em;
+  font-weight: 300;
+  font-family: 'Muli', sans-serif;
+}
+
+
+/** FOOTER SECTION **/
+
+footer .social {
+  width: 100%;
+  margin: auto;
+  padding: .5rem 0;
+}
+
+.icons {
+  background-color: #39dabd;
+  border-radius: 10px;
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.icons ul {
+  clear: left;
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 50%;
+  text-align: center;
+}
+
+.icons ul li {
+  display: block;
+  float: left;
+  list-style: none;
+  margin: 0 1em;
+  padding: 0;
+  position: relative;
+  right: 50%;
+}
+
+.icons ul li a {
+  display: block;
+  margin: 1em -0.3rem;
+  padding: 0.68em;
+  color: #585858;
+  text-decoration: none;
+  line-height: 1.3em;
+  font-size: 1.1em;
+  border: 2px solid #585858;
+  border-radius: 50%;
+  text-align: center;
+  width: 3rem;
+  height: 3rem;
+}
+
+.icons a i {
+  color: #585858;
+  font-size: 1.5rem;
+  line-height: 1;
+
+}
+.icons ul li a:hover {
+  background: #a2ecdf;
+  color: #f4f4f4;
+}
+
+
+
+ /** RESPONSIVE DESIGN **/
+@media screen and (max-width: 790px) {
+  nav > .content {
+  height: 3.375rem;
+}
+  nav .logo {
+    display: none;
+  }
+  nav .logo, nav .nav-menu {
+    font-size: 0.9rem
+  }
+  nav .nav-menu li a {
+  margin-left: -1rem;
+  }
+
+  header, header > .content {
+  height: 30rem;
+  }  
+
+  header .content h6 {
+  padding-top: 27rem;
+  font-size: 0.9rem;
+  }
+
+  header .content p {
+    font-size: 0.7rem;
+  }
+  
+  section .profile-img img {
+    width: 17vw;
+    height: 17vw;
+  }
+
+  section .content h2, footer h2 {
+    margin: 2rem 0 1.5rem 0;
+    font-size: 1.5rem;
+  }
+  section .content p {
+    font-size: 0.9rem;
+    line-height: 1.35rem;
+  }
+
+  section .content .about-me {
+    max-width: 30rem;
+  }
+  
+  .project-box {
+    margin: 0.5rem;
+  }
+
+  .excerpt {
+    font-size: 0.7rem;
+  }
+
+  .excerpt a {
+    font-size: 1rem;
+  }
+
+  footer .social {
+    height: 10rem;
+    padding: 2rem 0;
+  }
+  .icons a i {
+    font-size: 0.9rem;
+  }
+  
+  .icons ul li a {
+    padding: 0.38em;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  #copyright {
+    font-size: 0.8rem;
+    padding: 5rem 0 0;
+  }
+
+}
+
+/** NAVIGATION SECTION **/
+nav {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  text-transform: uppercase;
+  border-bottom: 0.06em solid #aaa;
+  z-index: 9999;
+}
+
+nav > .content {
+  height: 4.375rem;
+}
+
+nav .logo {
+  float: left;
+  color: #171818;
+  font-size: 1.25rem;
+  margin-top: 1.49rem;
+  letter-spacing: -.02rem;
+}
+
+nav .logo a {
+  color: #171818;
+  text-decoration: none;
+}
+
+nav .nav-menu {
+  float: right;
+  color: #aaa;
+  font-size: 1.05rem;
+  margin-top: 1.7rem;
+}
+
+nav .nav-menu li {
+  display: inline-block;
+  padding: 0 0 0 2rem;
+}
+
+nav .nav-menu li a {
+  margin-left: 1.563rem;
+  color: #a2a2a2;
+  text-decoration: none;
+  transition: all .4s ease 0s;
+}
+
+nav .nav-menu li.active {
+  color: #3a5556;
+  font-weight: 500;
+}
+
+nav .nav-menu li a:hover {
+  color: #da82ac;
+}
+nav a:hover {
+  cursor: pointer;
+  color: #da82ac;
+}
