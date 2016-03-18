@@ -124,9 +124,9 @@ header p {
 
 .list-items li {
   width: 80%;
-  margin: 0.5em 10% 1em;
+  margin: 0 10% 0.4em;
   border-bottom: 1px solid #ddd;
-  padding: 0 2em 0.3em;
+  padding: 0 2em 0.2em;
 }
 /** FOOTER SECTION **/
 
