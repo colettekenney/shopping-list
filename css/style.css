@@ -21,6 +21,10 @@ ol, ul {
   list-style-type: none;
   padding: 0;
 }
+
+*:focus {
+    outline: none;
+}
 /** START OF CUSTOM STYLES **/
 
 body {
@@ -91,6 +95,7 @@ header p {
   margin: 1em 10% 1em;
   border-radius: 20px;
   font-size: 1.1em;
+  border: 0.5px solid #e5e5e5;
   background-color: #e5e5e5;
   color: white;
   border: 0;
@@ -108,8 +113,8 @@ header p {
 }
 
 #startover:hover {
-  background: #171818;
-    color: #fbfbfb;
+  background: #DBE3CC;
+    color: #585858;
 }
 
 .list-items {
