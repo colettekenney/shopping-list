@@ -35,6 +35,7 @@ body {
   padding: 2em;
   border: 2px solid #585858;
   border-radius: 10px;
+  background-color: #DBE3CC
 }
 
 ::selection {
@@ -68,6 +69,10 @@ header p {
   font-size: 1em;
   font-weight: 300;
   font-family: 'Muli', sans-serif;
+  border-bottom: 1px solid gray;
+  max-width: 50%;
+  margin: 0 auto 1em auto;
+  padding: 0.3em 0 0.6em;
 }
 
 /** LIST SECTION **/
@@ -77,10 +82,33 @@ header p {
   padding: .5em;
   margin-bottom: .6em;
   font-weight: 300;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   height: 20em;
 }
 
+.new-item {
+  width: 80%;
+  margin: 1em 10% 1em;
+  border-radius: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1em;
+  background-color: #e5e5e5;
+  color: white;
+  border: 0;
+  padding: 0.5em 1em;
+}
+
+.list-items {
+  line-height: 1.6em;
+  
+}
+
+.list-items li {
+  width: 80%;
+  margin: 0.5em 10% 1em;
+  border-bottom: 1px solid #ddd;
+  padding: 0 2em 0.3em;
+}
 /** FOOTER SECTION **/
 
 footer {
@@ -138,8 +166,7 @@ footer {
 
 }
 .icons ul li a:hover {
-  background: #A7DBD7;
-  color: #f4f4f4;
+  background-color: #DBE3CC;
 }
 
 
