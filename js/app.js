@@ -1,10 +1,10 @@
 $(document).ready(function() {
 
-//Make list items sortable:
+//Make list items sortable
 	$( "ul.list-items" ).sortable({axis: "y"});
     $( "ul.list-items" ).disableSelection();
 
-//Add items to the list:
+//Add items to the list
 	$('form').submit(function(e) {
 		e.preventDefault();
 			//alert('pressed enter for adding new item');
@@ -12,36 +12,22 @@ $(document).ready(function() {
 			$('input.new-item').val('');
 	});
 
-//Add toggling from pending to done:
+//Add toggling from pending to done
 	$('.list-items').on('click', 'i.fa', function (){
 		$(this).toggleClass('fa-square-o fa-minus');
 		$(this).parent().toggleClass('pending done');
 	});
 
-
-
-
-
-
-
-// Clears all items on list 
+// Erase all items on list 
 	$(document).on('click', '#clear-list',function() {
 		//alert('clicked reset button');
 		$('.list-container').empty();
 		submissions = 0;
 	});
 
-// Clears checked items only
+// Erase checked items only
 	$(document).on('click', '#clear-checked', function () {
 		$('.done').slideUp();
 	});
-
-
-
-
-
-
-
-
 
 })
