@@ -256,4 +256,8 @@ footer {
 }
 
 
-
+@media handheld {
+  .list > p {
+    display: none;
+  }
+}
