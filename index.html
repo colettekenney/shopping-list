@@ -9,6 +9,8 @@
 	<link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/app.js"></script>
 	<title>Colette Kenney</title>
 </head>
 <body>
@@ -21,17 +23,14 @@
 		
 		<form class="list">
 			<input class="new-item" type="text" placeholder="Add an item and press enter">
-			<button id="startover">Reset List</button>
+			<p>Drag list items to re-order them.</p>
+			<a href="#" id="startover">Clear List</a>
 			<div class="list-container">
 				<ul class="list-items">
-					<li>Yogourt</li>
-					<li>Berries</li>
-					<li>Hemp Hearts</li>
-					<li>Cinnamon</li>
-					<li>Pecans</li>
-					<li>Coffee</li>
-					<li>Milk</li>
-					<li>Peanut Butter</li>
+					<li class="pending"><i class="fa fa-check"></i>Yogourt</li>
+					<li class="pending"><i class="fa fa-check"></i>Berries</li>
+					<li class="pending"><i class="fa fa-check"></i>Hemp Hearts</li>
+					<li class="done"><i class="fa fa-minus"></i>Peanut Butter</li>
 				</ul>
 			</div>	
 		</form>
