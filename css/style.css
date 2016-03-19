@@ -126,7 +126,7 @@ header p {
 }
 
 #clear-list, #clear-checked {
-  border-radius: 25px;
+  border-radius: 20px;
   font-size: 0.9em;
   text-decoration: none;
   color: #585858;
