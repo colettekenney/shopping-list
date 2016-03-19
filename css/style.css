@@ -93,6 +93,7 @@ header p {
 .new-item {
   width: 80%;
   margin: 1em 10% 1em;
+  text-align: center;
   border-radius: 20px;
   font-size: 1.1em;
   border: 0.5px solid #e5e5e5;
@@ -107,7 +108,7 @@ header p {
   font-size: .9em;
   color: #585858;
   margin-top: -0.7em;
-  padding-bottom: 1em;
+  padding-bottom: 0.6em;
   /*border: 1px solid gray;*/
 }
 
@@ -140,7 +141,7 @@ header p {
 
 .buttons ul{
   max-width: 80%;
-  margin: auto;
+  margin: 1em auto;
   padding: 0 1.1em 2em;
 }
 
@@ -149,8 +150,11 @@ header p {
 }
 
 .list-container {
-  margin-top: 0.3em;
+  margin: 0.3em;
   clear: both;
+  padding: 1.3em 0;
+  border: 1px solid #ddd;
+  border-radius: 20px;
 }
 .list-items {
   line-height: 1.6em;
