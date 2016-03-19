@@ -105,29 +105,55 @@ header p {
 .list > p {
   text-align: center;
   font-size: .9em;
-  color: #999;
+  color: #585858;
   margin-top: -0.7em;
   padding-bottom: 1em;
   /*border: 1px solid gray;*/
 }
-#startover {
-  width: 30%;
-  margin: 0 35% 1em;
-  border-radius: 25px;
-  /**font-family: 'Open Sans', sans-serif;**/
-  font-size: 0.9em;
-  background-color: #ddd;
-  border: 0.1px solid #585858;
+
+.fa-cut {
+  color: #69d2e7;
+  font-size: 1.2em;
+  padding-left: 0.2em;
 }
 
-#startover:hover {
+.buttons a#clear-list {
+  float: right;
+}
+.buttons a#clear-checked {
+  float: left;
+}
+
+#clear-list, #clear-checked {
+  border-radius: 25px;
+  font-size: 0.9em;
+  text-decoration: none;
+  color: #585858;
+  padding: 0.5em;
+  border: 1px solid #bbb;
+}
+
+#clear-list:hover, #clear-checked:hover {
   background: #DBE3CC;
   color: #585858;
 }
 
+.buttons ul{
+  max-width: 80%;
+  margin: auto;
+  padding: 0 1.1em 2em;
+}
+
+.buttons li {
+  display: inline;
+}
+
+.list-container {
+  margin-top: 0.3em;
+  clear: both;
+}
 .list-items {
   line-height: 1.6em;
-  
 }
 
 .list-items li {
@@ -141,18 +167,25 @@ li.done {
   color: #999;
   text-decoration: line-through;
 }
-.fa-check {
+.fa-square-o {
   color: #03a34b;
-  padding: 0 1em 0 0;
+  padding: 0.1em 0.8em 0 0;
+  font-size: 1.2em;
 }
 
-.fa-check:hover {
-  color: #f7022a;
+.list-items li.ui-sortable-helper {
+  margin-left: 3.5%;
+  background-color: white;
+  border: 1px solid #69d2e7;
 }
 
 .fa-minus {
   color: #f7022a;
   padding: 0 1.1em 0 0.1em;
+}
+
+.fa-remove {
+  padding-left: 2em;
 }
 
 /*.fa-remove {
