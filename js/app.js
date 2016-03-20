@@ -19,10 +19,9 @@ $(document).ready(function() {
 	});
 
 // Erase all items on list 
-	$(document).on('click', '#clear-list',function() {
+	$(document).on('click', '#clear-list', function() {
 		//alert('clicked reset button');
-		$('.list-container').empty();
-		submissions = 0;
+		$('.pending, .done').slideUp();
 	});
 
 // Erase checked items only
