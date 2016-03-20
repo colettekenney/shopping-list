@@ -159,6 +159,7 @@ header p {
   padding: 1.3em 0;
   border: 1px solid #ddd;
   border-radius: 20px;
+  min-height: 24em;
 }
 .list-items {
   line-height: 1.6em;
