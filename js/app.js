@@ -6,10 +6,15 @@ $(document).ready(function() {
 
 //Add items to the list
 	$('form').submit(function(e) {
-		e.preventDefault();
-			//alert('pressed enter for adding new item');
+		if($.trim($('input.new-item').val()) === "") {
+			e.preventDefault();
+			alert('Please Enter an Item');}
+
+		else {
+			e.preventDefault();
 			$('ul.list-items').append('<li class="pending"><i class="fa fa-square-o"></i>'+$('input.new-item').val()+'</li>');
-			$('input.new-item').val('');
+			$('input.new-item').val('');}
+
 	});
 
 //Add toggling from pending to done
